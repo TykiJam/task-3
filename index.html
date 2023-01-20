@@ -145,10 +145,10 @@
 				<h2 class="subscribe_heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
 				<p class="subscribe_text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed d</p>
 			</div>
-			<div class="subscribe_form" action="" method="GET">
-				<div class="subscribe_input">Email Address...</div>
-				<a class="subscribe_button">Subscribe</a>
-			</div>
+			<form class="subscribe_form" action="" method="GET">
+				<input class="subscribe_input" type="email" name="email" placeholder="Email Address..." required>
+				<button class="subscribe_button" type="submit">Subscribe</button>
+			</form>
 		</section>
 		<div class="feedback-contacts">
 			<div class="feedback_left-box"></div>	
@@ -159,12 +159,12 @@
 					<hr class="header__line feedback_line">
 				</section>
 				<section class="feedback_body">
-					<div class="feedback_form">
-						<div class="feedback_input feedback_name">Name</div>
-						<div class="feedback_input feedback_mail">Your Mail</div>
-						<div class="feedback_input feedback_message">Type your message</div>
-						<a class="feedback_button">Send message</a>
-					</div>
+					<form class="feedback_form" action="" method="GET">
+						<input class="feedback_input feedback_name" type="text" name="name" placeholder="Name" required>
+						<input class="feedback_input feedback_mail" type="email" name="email" placeholder="Your Mail" required>
+						<textarea class="feedback_input feedback_message" name="message" cols="30" rows="5" placeholder="Type your message" required></textarea>
+						<button class="feedback_button" type="submit">Send message</button>
+					</form>
 				</section>
 			</section>
 			<section class="contacts">
